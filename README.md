@@ -1,6 +1,5 @@
 # Earthquake_Visuals
 
-Click here
+You will find the link to the hosted page for this challenge.
 
-[plain][URL="https://thomasvance.github.io/Earthquake_Visuals/Leaflet-1/"][/URL][/plain]
 https://thomasvance.github.io/Earthquake_Visuals/Leaflet-1/
