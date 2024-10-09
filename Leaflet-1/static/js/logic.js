@@ -4,7 +4,7 @@ d3.json(queryUrl).then(function(data){
     createFeatures(data.features);
 });
 
-function createFeatures(earthquakeData, platesData){
+function createFeatures(earthquakeData){
     function onEachFeature(feature, layer){
     layer.bindPopup(`<h3>Location: ${feature.properties.place}</h3><hr><p>Time: ${new Date(feature.properties.time)}</p><hr><p>Magnitude: ${feature.properties.mag}</p><hr><p>Number of "felt" Reports: ${feature.properties.felt}`);
 }
@@ -66,8 +66,9 @@ legend.onAdd = function() {
   };
 
   function createMap(earthquakes) {
-    let streetstylemap = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}', {
+    let streetstylemap = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
         maxZoom: 15,
+        subdomains:['mt0','mt1','mt2','mt3']
 
       })
 
