@@ -67,7 +67,7 @@ legend.onAdd = function() {
 
   function createMap(earthquakes) {
     let streetstylemap = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-        maxZoom: 15,
+        maxZoom: 20,
         subdomains:['mt0','mt1','mt2','mt3']
 
       })
